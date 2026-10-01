@@ -30,10 +30,8 @@ Le schéma ci-dessous montre :
 
 ## PCB
 
-Conception du PCB sous [Altium / KiCad / Proteus – à préciser].
-
+Conception du PCB sous Altium 
 ![PCB – vue de dessus](hardware/pcb/pcb_top.png)
-![PCB – vue de dessous](hardware/pcb/pcb_bottom.png)
 
 ## Réalisation et résultats
 
