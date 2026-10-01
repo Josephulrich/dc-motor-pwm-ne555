@@ -1,12 +1,12 @@
 cat > README.md << EOF
 # Contrôle de vitesse d'un moteur DC 12V via NE555 (PWM)
 
-![Schéma électrique](hardware/schematics/schema_ne555_motor.png)
+![schema_ne555_motor](hardware/schematics/schema_ne555_motor.png)
 
 ![PCB – vue de dessus](hardware/pcb/pcb_top.png)
 ![PCB – vue de dessous](hardware/pcb/pcb_bottom.png)
 
-![Photo du montage](assets/photos/montage_1.jpg)
+![Photo du montage](assets/photosschema_elec.png)
 
 ## Objectif
 
