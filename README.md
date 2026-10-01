@@ -1,5 +1,3 @@
-# dc-motor-pwm-ne555
-Contrôle de vitesse d’un moteur DC 12V via PWM généré par NE555.
 cat > README.md << EOF
 # Contrôle de vitesse d’un moteur DC 12V via NE555 (PWM)
 
