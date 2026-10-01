@@ -4,9 +4,7 @@ cat > README.md << EOF
 ![schema_ne555_motor](hardware/schematics/schema_ne555_motor.png)
 
 ![PCB – vue de dessus](hardware/pcb/pcb_top.png)
-![PCB – vue de dessous](hardware/pcb/pcb_bottom.png)
 
-![Photo du montage](assets/photosschema_elec.png)
 
 ## Objectif
 
