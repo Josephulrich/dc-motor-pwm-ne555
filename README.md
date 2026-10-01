@@ -1,4 +1,4 @@
-cat > README.md << EOF
+
 # Contrôle de vitesse d'un moteur DC 12V via NE555 (PWM)
 
 ![schema_ne555_motor](hardware/schematics/schema_ne555_motor.png)
@@ -48,4 +48,4 @@ Conception du PCB sous Altium
 - \`hardware/pcb/\` : fichiers et exports du PCB.
 - \`assets/photos/\` : photos du montage.
 - \`docs/\` : notes, calculs, simulations.
-EOF
+
