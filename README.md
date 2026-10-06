@@ -1,51 +1,60 @@
-
-# Contrôle de vitesse d'un moteur DC 12V via NE555 (PWM)
+# 12 V DC Motor Speed Control with NE555 (PWM)
 
 ![schema_ne555_motor](hardware/schematics/schema_ne555_motor.png)
 
-![PCB – vue de dessus](hardware/pcb/pcb_top.png)
+![PCB, top view](hardware/pcb/pcb_top.png)
 
+## Objective
 
-## Objectif
+Control the speed of a 12 V DC motor with a potentiometer, by generating a PWM signal with an NE555 in astable mode.
 
-Commander la vitesse d'un moteur DC 12V à l'aide d'un potentiomètre, en générant un signal PWM avec un NE555 en mode astable.
+## Operating Principle
 
-## Principe de fonctionnement
+- The NE555 is configured in astable mode to generate a PWM signal.
+- A potentiometer adjusts the PWM duty cycle.
+- An IRFZ44N MOSFET switches the motor according to the PWM signal.
+- A freewheeling diode protects the circuit against inductive voltage spikes.
 
-- Le NE555 est configuré en mode astable pour générer un signal PWM.
-- Un potentiomètre ajuste le rapport cyclique du PWM.
-- Un MOSFET IRFZ44N commute le moteur en fonction du signal PWM.
-- Une diode de roue libre protège le circuit contre les surtensions.
+## Schematic
 
-## Schéma électrique
+The schematic below shows:
 
-Le schéma ci-dessous montre :
-- Le NE555 (U1) en mode astable.
-- Le potentiomètre PV1 pour régler le rapport cyclique.
-- Le MOSFET Q1 (IRFZ44N) et la diode D1 (1N4007).
+- The NE555 (U1) in astable mode.
+- The potentiometer PV1 used to set the duty cycle.
+- The MOSFET Q1 (IRFZ44N) and the diode D1 (1N4007).
 
-![Schéma détaillé](hardware/schematics/schema_ne555_motor.png)
+![Detailed schematic](hardware/schematics/schema_ne555_motor.png)
 
 ## PCB
 
-Conception du PCB sous Altium 
-![PCB – vue de dessus](hardware/pcb/pcb_top.png)
+PCB designed in Altium Designer.
 
-## Réalisation et résultats
+![PCB, top view](hardware/pcb/pcb_top.png)
 
-- Prototype réalisé et testé sur banc.
-- Réglage de la vitesse via le potentiomètre validé.
+## Build and Results
 
-## Améliorations possibles
+- Prototype built and tested on the bench.
+- Speed adjustment through the potentiometer validated.
 
-- Ajout d'un affichage de la vitesse (potentiomètre + ADC + microcontrôleur).
-- Protection contre les surintensités.
-- Boîtier 3D imprimé.
+## Possible Improvements
 
-## Fichiers du projet
+- Add a speed display (potentiometer + ADC + microcontroller).
+- Add overcurrent protection.
+- Replace the 1N4007 with a fast-recovery or Schottky diode, better suited to PWM switching.
+- 3D-printed enclosure.
 
-- \`hardware/schematics/\` : schémas électriques.
-- \`hardware/pcb/\` : fichiers et exports du PCB.
-- \`assets/photos/\` : photos du montage.
-- \`docs/\` : notes, calculs, simulations.
+## Project Files
 
+- `hardware/schematics/`: electrical schematics.
+- `hardware/pcb/`: PCB files and exports.
+- `assets/photos/`: photos of the build.
+- `docs/`: notes, calculations, simulations.
+
+## Author
+
+**Joseph Mbode**
+
+Embedded systems engineer, electronics and PCB design.
+
+- LinkedIn: [Joseph Mbode](https://www.linkedin.com/in/joseph-mbode)
+- GitHub: [@Josephulrich](https://github.com/Josephulrich)
